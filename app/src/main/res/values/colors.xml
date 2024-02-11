@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="white_card">#f7f6ff</color>
+    <color name="red">#ff0036</color>
+    <color name="yellow">#ffe120</color>
+    <color name="grey">#aba7a7</color>
+    <color name="white_grey">#eaeaf5</color>
+    <color name="grey_one">#e8e9f6</color>
+    <color name="maroon">#800000</color>
+    <color name="colorSecondary">#f433a2ff</color>
+    <color name="colorPrimary">#33a2ff</color>
+    <color name="colorPrimaryDark">#3311ff</color>
+    <color name="colorAccent">#FFAAFF</color>
+
+</resources>

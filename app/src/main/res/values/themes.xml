@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ChatApp2" parent="Theme.Material3.DayNight.NoActionBar">
+
+
+        <item name="android:statusBarColor">@color/red</item>
+        <!-- this color accent for  all textInputLayout in activity main because originally when
+         we click on these field it has green color so we make it red color which matches our design.-->
+        <item name="colorAccent">@color/red</item>
+    </style>
+
+
+    <style name="StyleWithoutToolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">#1f2c34</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+
+    <style name="Theme.ChatApp2.Launcher">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@drawable/launcher</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/grey</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+
+
+    <style name="Theme.ChatApp2" parent="Base.Theme.ChatApp2" />
+
+
+
+</resources>
