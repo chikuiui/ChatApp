@@ -77,6 +77,7 @@ public class Profile extends AppCompatActivity {
 
         //  uploads an image file (imgPath) to Firebase Storage, generates a unique reference for the image,
         //  and then retrieves the download URL of the uploaded image
+        // UUID.randomUUID() -> 128 bit unique id.
         FirebaseStorage.getInstance().getReference("images").child(UUID.randomUUID().toString())
                 .putFile(imgPath).addOnCompleteListener( task -> {
                     if(task.isSuccessful()){

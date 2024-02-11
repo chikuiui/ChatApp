@@ -44,12 +44,13 @@ public class MessageActivity extends AppCompatActivity {
                 .error(R.drawable.account_img).into(binding.imgToolbar);
 
         binding.send.setOnClickListener((view) ->{
-            if(binding.editText.toString().isEmpty()){
+            if(binding.editText.getText().toString().isEmpty()){
                 Toast.makeText(this, "No message Found!", Toast.LENGTH_SHORT).show();
                 return;
             }
             Message currMessage = new Message(FirebaseAuth.getInstance().getCurrentUser().getEmail(),
                     emailOfRoommate,binding.editText.getText().toString());
+
             FirebaseDatabase.getInstance().getReference("messages").child(chatRoomId).push().setValue(currMessage);
             binding.editText.setText("");
         });
